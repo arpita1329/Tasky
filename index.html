@@ -22,7 +22,7 @@
 
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
         <div class="container-fluid">
             <h1 class="navbar-brand fw-bold" >
                 <a  href="#">Tasky</a>
@@ -45,7 +45,7 @@
 
     <!--Search Bar-->
     <div class="container">
-        <section class="mt-4">
+        <section class="mt-5">
             <div class="row justify-content-center ">
                 <div class="col-md-6">
                     <div class="input-group mb-3 shadow mb-5 ">
@@ -55,35 +55,40 @@
                 </div>
             </div>
         </section>
+
+
+        
+
+
+        <!--Card Section-->
+        <section>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="card" >
+                  <div class="card-header d-flex justify-content-end gap-2">
+                      <button type="button" class="btn btn-outline-success "><i class="fas fa-pencil-alt"></i></button>
+                      <button type="button" class="btn btn-outline-danger "><i class="fas fa-trash-alt"></i></button>
+                  </div>
+                  <img src="https://images.unsplash.com/photo-1623885065412-300800bcadb3?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top mb-3 rounded-lg" alt="card_image" />
+                  <div class="card-body">                     
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <div class="tags text-white d-flex flex-wrap">
+                      <span class="badge bg-primary m-1">Amazing</span>
+                    </div>
+                  </div>
+                  <div class="card-footer text-muted">
+                      <button type="button" class="btn btn-outline-primary float-end rounded-pill">Open Task</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
     </div>
 
 
-    <!--Card Section-->
-    <section>
-        <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-header d-flex justify-content-end gap-2">
-                        <button type="button" class="btn btn-outline-success"><i class="fas fa-pencil-alt"></i></button>
-                        <button type="button" class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></button>
-                    </div>
-                    
-                    <div class="card-body">
-                      <img src="https://images.unsplash.com/photo-1623885065412-300800bcadb3?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top mb-3 rounded-lg" alt="card_image" />
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <div class="tags text-white d-flex flex-wrap">
-                        <span class="badge bg-primary m-1">Amazing</span>
-                      </div>
-                    </div>
-                    <div class="card-footer text-muted">
-                        <button type="button" class="btn btn-outline-primary float-end">Open Task</button>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+   
 
 
 
