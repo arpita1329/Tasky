@@ -20,7 +20,7 @@
     <title>Tasky</title>
 </head>
 
-<body>
+<body onload="loadInitialTaskCards()"> 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -49,7 +49,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" onclick="saveChanges()">Save changes</button>
+              <button type="button" class="btn btn-primary" onclick="saveChanges()" data-bs-dismiss="modal">Save changes</button>
             </div>
           </div>
         </div>
@@ -98,27 +98,7 @@
 
         <!--Card Section-->
         <section>
-          <div class="row task_container">
-            <div class="col-md-6 col-lg-4 ">
-              <div class="card" >
-                  <div class="card-header d-flex justify-content-end gap-2 ">
-                      <button type="button" class="btn btn-outline-success "><i class="fas fa-pencil-alt"></i></button>
-                      <button type="button" class="btn btn-outline-danger "><i class="fas fa-trash-alt"></i></button>
-                  </div>
-                  <img src="https://images.unsplash.com/photo-1623885065412-300800bcadb3?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top mb-3 rounded-lg" alt="card_image" />
-                  <div class="card-body">                     
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <div class="tags text-white d-flex flex-wrap">
-                      <span class="badge bg-primary m-1">Amazing</span>
-                    </div>
-                  </div>
-                  <div class="card-footer text-muted">
-                      <button type="button" class="btn btn-outline-primary float-end rounded-pill">Open Task</button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="row task_container"></div>
         </section>
 
     </div>
